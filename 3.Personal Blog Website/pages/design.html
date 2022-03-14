@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <title>Design system</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="box">
+                <h1 class="header-title">Personal Blog</h1>
+                <h2 class="header-subtitle">A blog about stuff</h2>
+            </header>
+            <nav class="box sidebar">
+                <div class="sidebar-pages">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </div>
+                <div class="nav-sidebar">
+                    <h2 class="sidebar-header">Latest Posts</h2>
+                    <ul class="sidebar-list">
+                        <li class="sidebar-list-item"><a href="blog-post.html">Ut aliquam sollicitudin leo</a></li>
+                        <li class="sidebar-list-item"><a href="blog-post.html">Cras ornare tristique elit</a></li>
+                        <li class="sidebar-list-item"><a href="blog-post.html">Morbi interdum mollis sapie</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="design-main blog-post">
+                <h2>Design System</h2>
+                <h3>Colors</h3>
+                <div class="design-colors design">
+                    <figure class="color-light color-box">
+                        <div class="color-circle" id="color-background" alt="Color isabelline"></div>
+                        <figcaption>Isabelline <span class="color-hex" id="hex-background">#F0F0F0</span></figcaption>
+                        <p>Used as a light background color for the main pages.</p>
+                    </figure>
+                    <figure class="color-1 color-box">
+                        <div class="color-circle" id="color-purple" alt="Color heliotrope magenta"></div>
+                        <figcaption>Heliotrope Magenta <span class="color-hex" id="hex-purple">#A0A</span></figcaption>
+                        <p>Used as the primary highlight color for buttons and links.</p>
+                    </figure>
+                    <figure class="color-2 color-box">
+                        <div class="color-circle" id="color-blue" alt="Color Medium Turquoise"></div>
+                        <figcaption>Medium Turquoise <span class="color-hex" id="hex-blue">#66D7D1</span></figcaption>
+                        <p>Secondary highlight color for buttons and used for blockquotes.</p>
+                    </figure>
+                </div>   
+                <h3>Font and Text</h3>   
+                <div class="design design-font"> 
+                    <p>Font-family: Lato</p>
+                    <p>Font-weight: 16px</p>
+                    <h1>H1 Header</h1> 
+                    <h2>H2 Header</h2> 
+                    <h3>H3 Header</h3>
+                    <h4>H4 Header</h4> 
+                    <blockquote>
+                        This is an example of a blockquote
+                    </blockquote>
+                </div>
+                <h3>Links</h3>
+                <div class="design design-links">
+                    <h4 class="design-subheader">Navigation links</h4>
+                    <a href="#" class="nav-link">LINK STANDARD</a><br>
+                    <a href="#" class="nav-link active">LINK ACTIVE</a>
+                    <h4 class="design-subheader"> Inline text links</h4>
+                    An example of a <a href="#" class="active">link</a> inside text.
+                </div>    
+                <h3>Buttons</h3>
+                <div class="design design-buttons">
+                    <div class="design-button">
+                        <h4 class="design-subheader">Regular button</h4>
+                        <a href="#" class="button">Read more &rarr;</a> 
+                        <code>
+                            .button { <br>
+                                <div class="code-block">
+                                    color: #A0A; <br>
+                                    border-radius: 8px; <br>
+                                    padding: 6px; <br>
+                                    font-weight: bold; <br>
+                                    text-transform: uppercase; <br>
+                                    cursor: pointer; <br>
+                                    border: 1px solid #A0A; <br>
+                                    font-size: 0.7em; <br>
+                                </div>
+                            }
+                        </code>
+                    </div>
+                    <div class="design-button">
+                        <h4 class="design-subheader">Active button</h4>
+                        <a href="#" class="button btn-active">Read more &rarr;</a> 
+                        <code>
+                            .button:hover { <br>
+                            <div class="code-block">
+                                box-shadow: 2px 2px 2px #66D7D1; <br>
+                            </div>
+                        }
+                        </code>
+                    </div> 
+                </div>
+                <h3>Boxes</h3>
+                <div class="design design-boxes">
+                    <div class="blog-post">
+                        <h4>This is a standard box for a blog post or page</h4>
+                    </div>
+                    <code>
+                        .blog-post { <br>
+                            <div class="code-block">
+                                padding: 1rem; <br>
+                                box-shadow: 2px 2px 6px grey; <br>
+                            </div>
+                        }
+                    </code>
+                    <p>The blog cards on the homepage are the same as this regular box, but when hovering over them, the shadow expands slightly: <code>box-shadow: 2px 2px 6px 2px grey;</code></p>
+                </div>
+            </div>
+            <footer class="box">
+                
+            </footer>
+        </div>
+    </body>
+</html>
