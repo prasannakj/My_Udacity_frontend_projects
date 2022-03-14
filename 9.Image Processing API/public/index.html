@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Processing API</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+    <h1>Image Processing API</h1>
+
+    <p>Example: <a href="http://localhost:3000/api/image?filename=palmtunnel&width=400&height=250">http://localhost:3000/api/image?filename=palmtunnel&width=400&height=250</a>
+    </p>
+    
+    <form action="http://localhost:3000/api/image?filename=palmtunnel&width=400&height=250" method = "get" class="form" >
+    <label for="url">Enter an URL: </label>
+    <input class="label" type = "text">
+    <button> Convert & Display </button>
+    </form>
+    <p> Example URL: http://localhost:3000/api/image?filename=palmtunnel&width=400&height=250 </p>
+
+    <form action="api/image" method="get" class="form">
+        <label class="label" for="filename">Image:</label>
+        <select class="select" name="filename" id="filename">
+            <option value="fjord">Fjord</option>
+            <option value="encenadaport">Encenadaport</option>
+            <option value="icelandwaterfall">Icelandwaterfall</option>
+            <option value="santamonica">Santamonica</option>
+        </select> <br>
+
+        <label class="label" for="width">Width:</label>
+        <input class="input" type="number" name="width" id="width"> <br>
+
+        <label class="label" for="height">Height:</label>
+        <input class="input" type="number" name="height" id="height">
+        <button>Convert & Display</button>
+    </form>
+
+
+</div>
+
+</body>
+</html>
